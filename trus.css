@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+font-family: 'Arial Narrow', Arial, sans-serif;
+font-weight: bold;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+text-decoration: none; 
+}
+
+.logoT {
+    color: white;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding:15px;
+    position: fixed;
+    z-index: 999;
+    background: rgba(202, 16, 16, 0);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+}
+
+.about {
+    height: 900px;
+    background-image: linear-gradient(white, rgb(25, 189, 255), white);
+}
+
+.imgd {
+    width: 100%;
+}
+
+
+.imgp {
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-height: 100vh;
+    animation: fadeIn 1s;
+    box-shadow: 0 15px 35px rgba(1, 1, 1, 0.3);
+}
+
+.text {
+    display: flex;
+    font-size: 35px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 50px;
+}
+
+.textT {
+    width: 1000px;
+    line-height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+
+.btn {
+    padding-top: 20px;
+    display: flex;
+    font-size: 35px;
+    width: 100%;
+    height: 100%;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+.btnR {
+    display: block;
+    background-color: rgb(242, 192, 66);
+    width: 140px;
+    height: 60px;
+    color: white;
+    font-size: 20PX;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.btnR:hover {
+    background-color: rgb(220, 168, 35);
+}
+
+.btnR:active {
+    background-color: rgb(201, 151, 26);
+}
+
+.service-card {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 150px;
+    padding-top: 300px;
+    box-shadow: 0 15px 35px rgba(1, 1, 1, 0.3);
+}
+
+.cards {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.2);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px;
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+}
+
+.cards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(1, 1, 1, 0.3);
+}
+
+.aboutS {
+    color: black;
+    font-size: 20px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.imgS {
+    width: 450px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btnP {
+    padding: 50px;
+}
+
+.order {
+    display: block;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 150px;
+    padding-top: 300px;
+    background-image: linear-gradient(white, rgb(0, 105, 148));
+}
+
+.orderCard {
+    width: 500px;
+    display:grid;
+    padding: 20px;
+    gap: 20px;
+    background-color: yellowgreen;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding-left: 15px;
+    height: 30px;
+    width: 270px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    border-style: none;
+    cursor: pointer;
+}
