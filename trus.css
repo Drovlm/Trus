@@ -11,7 +11,7 @@ text-decoration: none;
 }
 
 .logoT {
-    color: white;
+    color: rgb(0, 0, 0);
     width: 100%;
     font-size: 40px;
     font-weight: 900px;
@@ -25,11 +25,6 @@ text-decoration: none;
     background: rgba(202, 16, 16, 0);
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
-}
-
-.about {
-    height: 900px;
-    background-image: linear-gradient(white, rgb(25, 189, 255), white);
 }
 
 .imgd {
@@ -60,7 +55,7 @@ text-decoration: none;
 }
 
 .textT {
-    width: 1000px;
+    width: 50%;
     line-height: 60px;
     justify-content: center;
     align-items: center;
@@ -100,20 +95,25 @@ text-decoration: none;
     background-color: rgb(201, 151, 26);
 }
 
+.sec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
 .service-card {
-    margin-top: 60px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 150px;
-    padding-top: 300px;
-    box-shadow: 0 15px 35px rgba(1, 1, 1, 0.3);
+
 }
 
 .cards {
     width: 500px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
@@ -144,37 +144,249 @@ text-decoration: none;
 }
 
 .btnP {
-    padding: 50px;
+    padding-bottom: 50px;
 }
 
 .order {
     display: block;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    padding: 150px;
-    padding-top: 300px;
+    padding-bottom: 250px;
+    padding-top: 270px;
     background-image: linear-gradient(white, rgb(0, 105, 148));
 }
 
 .orderCard {
-    width: 500px;
     display:grid;
-    padding: 20px;
     gap: 20px;
-    background-color: yellowgreen;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .input {
     display: block;
-    width: 100%;
     background-color: rgb(230, 230, 230);
     padding-left: 15px;
     height: 30px;
-    width: 270px;
+    width: 470px;
     font-size: 15px;
     font-weight: 500;
     border-radius: 8px;
     border-style: none;
+    cursor: pointer;    
+}
+
+textarea {
+    width: 100%;
+    padding: 6px ;
+    border-radius: 4px;
+    resize: none;
+}
+
+.btnO {
+    display: block;
+    background-color: rgb(242, 192, 66);
+    width: 140px;
+    height: 60px;
+    color: white;
+    font-size: 20PX;
+    border-radius: 10px;
+    border-style: none;
     cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.btnO:hover {
+    background-color: rgb(220, 168, 35);
+}
+
+.btnO:active {
+    background-color: rgb(201, 151, 26);
+}
+
+footer {
+    height: 200px;
+    background-color: rgb(0, 105, 148);
+}
+
+.Contact {
+    padding: 0px 120px;
+    }
+
+.social-icons{
+    color: white;
+    font-size: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.f1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+}
+
+.fa-facebook{
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.fa-facebook:hover{
+    transform: scale(1.1);
+}
+.fa-instagram{
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.fa-instagram:hover{
+    transform: scale(1.1);
+}
+
+.fa-telegram{
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.fa-telegram:hover{
+    transform: scale(1.1);
+}
+
+.fa-linkedin{
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.fa-linkedin:hover{
+    transform: scale(1.1);
+}
+
+.f2 {
+    color: white;
+    width: 100%;
+    padding-top: 20px;
+    display: grid;
+    gap: 10px;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1800px) {
+    .textT {
+        width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+
+    .text {
+        display: flex;
+        font-size: 30px;
+
+    }
+    
+    .textT {
+        line-height: 50px;
+    }
+
+    .Contact {
+        padding: 0px 80px;
+        }
+
+        .service-card {
+            padding: 90px;
+        }
+
+        .input {
+            width: 550px;
+        }
+  }
+
+  @media screen and (max-width: 570px) {
+    .textT {
+        width: 95%;
+        font-size: 25px;
+        margin: auto;
+    }
+
+    .service-card {
+        padding: 0px;
+        padding-top: 70px;
+        gap: 0px;
+    }
+    
+    .cards {
+        width: 400px;
+        padding: 15px;
+   }
+
+   .aboutS {
+    font-size: 18px;
+}
+    
+   .imgS {
+    width: 350px;
+
+}
+
+    .input {
+        width: 400px;
+    }
+
+    .order {
+        padding-bottom: 100px;
+    }
+
+    .Contact {
+        padding: 0px 40px;
+        }
+}
+
+@media screen and (max-width: 570px) {
+    .cards {
+        width: 350px;
+   }
+    
+   .imgS {
+    width: 320px;
+}
+
+    .input {
+        width: 350px;
+    }
+
+    .Contact {
+        padding: 0px 20px;
+        }  
+}
+
+@media screen and (max-width: 385px) {
+    .cards {
+        width: 300px;
+   }
+
+   .aboutS {
+    font-size: 15px;
+}
+    
+   .imgS {
+    width: 280px;
+}
+
+    .input {
+        width: 270px;
+    }
+
+    .Contact {
+        padding: 0px 15px;
+        font-size: 15px;
+        }  
+
+        .f1 {
+            font-size: 25px;
+        }
+        
+        .social-icons{
+            font-size: 25px;
+        }
 }
